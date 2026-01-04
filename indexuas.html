@@ -2,94 +2,573 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Portofolio | UAS Web 1</title>
-    <link rel="stylesheet" href="uas.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nama Anda</title>
+    <link rel="stylesheet" href="uas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>MyPortfolio</h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#profile" class="nav-link">Profile</a></li>
+                <li><a href="#projects" class="nav-link">Karya & Project</a></li>
+                <li><a href="#media" class="nav-link">Media</a></li>
+                <li><a href="#info" class="nav-link">Informasi</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-<header>
-    <div class="hero">
-        <h1>Halo, Saya Mahasiswa Sistem Informasi</h1>
-        <p>Web Developer | UI Designer | Freelancer</p>
-        <a href="#contact" class="btn">Hubungi Saya</a>
-    </div>
-</header>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Selamat Datang di Portfolio Saya</h1>
+            <p class="hero-subtitle">Saya adalah Web Developer & Designer</p>
+            <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#profile">Profile</a>
-    <a href="#project">Karya</a>
-    <a href="#media">Media</a>
-    <a href="#info">Informasi</a>
-    <a href="#contact">Kontak</a>
-</nav>
+    <!-- Profile Section -->
+    <section id="profile" class="section">
+        <div class="container">
+            <h2 class="section-title">Profile Saya</h2>
+            
+            <!-- Data Diri -->
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img src="https://via.placeholder.com/150" alt="Profile" class="profile-img">
+                    <div class="profile-info">
+                        <h3>Nama Lengkap Anda</h3>
+                        <p><strong>NIM:</strong> 2023XXXXXXX</p>
+                        <p><strong>Kelas:</strong> SI-XX-X</p>
+                    </div>
+                </div>
+            </div>
 
-<section id="profile" class="card">
-    <h2>Profile</h2>
-    <p><b>Nama:</b> Isi Nama</p>
-    <p><b>NIM:</b> Isi NIM</p>
-    <p><b>Kelas:</b> Isi Kelas</p>
+            <!-- Keahlian -->
+            <div class="subsection">
+                <h3>Keahlian & Minat</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <h4>Web Development</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <h4>UI/UX Design</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <h4>Database Management</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Mobile Development</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <h3>Keahlian</h3>
-    <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-    </div>
-</section>
+            <!-- Pengalaman Kerja -->
+            <div class="subsection">
+                <h3>Pengalaman Kerja</h3>
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                        <div class="timeline-content">
+                            <h4>Junior Web Developer</h4>
+                            <p class="company">PT. Teknologi Digital</p>
+                            <p class="period">Jan 2024 - Sekarang</p>
+                            <p>Mengembangkan dan memelihara website perusahaan menggunakan HTML, CSS, dan JavaScript.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="timeline-content">
+                            <h4>Freelance Web Designer</h4>
+                            <p class="company">Freelance</p>
+                            <p class="period">Jun 2023 - Des 2023</p>
+                            <p>Mendesain dan membuat website untuk klien lokal dan UMKM.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<section id="project" class="card">
-    <h2>Karya & Project</h2>
-    <div class="grid">
-        <div class="box">Website Portofolio</div>
-        <div class="box">Website Akademik</div>
-        <div class="box">Landing Page</div>
-    </div>
-</section>
+            <!-- Pendidikan -->
+            <div class="subsection">
+                <h3>Pendidikan</h3>
+                <div class="education-grid">
+                    <div class="education-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Universitas Pamulang</h4>
+                        <p>S1 Sistem Informasi</p>
+                        <p class="period">2023 - Sekarang</p>
+                    </div>
+                    <div class="education-item">
+                        <i class="fas fa-school"></i>
+                        <h4>SMA Negeri 1</h4>
+                        <p>IPA</p>
+                        <p class="period">2020 - 2023</p>
+                    </div>
+                </div>
+            </div>
 
-<section id="media" class="card">
-    <h2>Media</h2>
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-    </video>
-    <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-    </audio>
-    <img src="/assets/bernat234.jpg" alt="">
-</section>
+            <!-- Kontak -->
+            <div class="subsection">
+                <h3>Informasi Kontak</h3>
+                <div class="contact-info-grid">
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>email@example.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+62 812-3456-7890</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Tangerang Selatan, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="info" class="card">
-    <h2>Informasi</h2>
-    <div class="stats">
-        <div><h3>5+</h3><p>Project</p></div>
-        <div><h3>3</h3><p>Klien Puas</p></div>
-        <div><h3>1</h3><p>Tahun Pengalaman</p></div>
-        <div><h3>90%</h3><p>Kepuasan</p></div>
-    </div>
-</section>
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Karya & Project</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-view">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <p>Website toko online dengan fitur keranjang belanja dan payment gateway.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-view">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Website portfolio modern dan responsif untuk klien freelance.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-view">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Admin</h3>
+                        <p>Dashboard untuk manajemen data dengan visualisasi grafik.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="contact" class="card">
-    <h2>Kontak</h2>
-    <form id="contactForm">
-        <input type="text" placeholder="Nama Lengkap" required>
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Subjek" required>
-        <textarea placeholder="Pesan" required></textarea>
-        <button type="submit">Kirim Pesan</button>
-    </form>
+    <!-- Media Section -->
+    <section id="media" class="section">
+        <div class="container">
+            <h2 class="section-title">Media</h2>
+            
+            <!-- Video -->
+            <div class="subsection">
+                <h3>Video</h3>
+                <div class="media-container">
+                    <video controls class="media-player">
+                        <source src="video-sample.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                </div>
+            </div>
 
-    <div class="social">
-        <a href="#">GitHub</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-    </div>
-</section>
+            <!-- Audio -->
+            <div class="subsection">
+                <h3>Audio</h3>
+                <div class="media-container">
+                    <audio controls class="media-player">
+                        <source src="audio-sample.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung tag audio.
+                    </audio>
+                </div>
+            </div>
 
-<footer>
-    <p>© 2026 Portofolio UAS Pemrograman Web 1</p>
-</footer>
+            <!-- Gambar -->
+            <div class="subsection">
+                <h3>Galeri Gambar</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/400x300" alt="Gallery 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/400x300" alt="Gallery 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/400x300" alt="Gallery 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/400x300" alt="Gallery 4">
+                    </div>
+                </div>
+            </div>
 
-<script src="uas.js"></script>
+            <!-- Dokumen -->
+            <div class="subsection">
+                <h3>Dokumen PDF</h3>
+                <div class="document-container">
+                    <embed src="document-sample.pdf" type="application/pdf" class="pdf-viewer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Informasi</h2>
+            
+            <!-- Layanan -->
+            <div class="subsection">
+                <h3>Paket Layanan</h3>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4>Basic</h4>
+                            <p class="price">Rp 1.500.000</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Landing Page</li>
+                            <li><i class="fas fa-check"></i> Responsive Design</li>
+                            <li><i class="fas fa-check"></i> 3 Revisi</li>
+                            <li><i class="fas fa-check"></i> 1 Bulan Support</li>
+                        </ul>
+                        <button class="btn btn-outline">Pilih Paket</button>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="badge">Popular</div>
+                        <div class="pricing-header">
+                            <h4>Professional</h4>
+                            <p class="price">Rp 3.500.000</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Multi-page Website</li>
+                            <li><i class="fas fa-check"></i> Responsive Design</li>
+                            <li><i class="fas fa-check"></i> 5 Revisi</li>
+                            <li><i class="fas fa-check"></i> 3 Bulan Support</li>
+                            <li><i class="fas fa-check"></i> SEO Optimization</li>
+                        </ul>
+                        <button class="btn btn-primary">Pilih Paket</button>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4>Enterprise</h4>
+                            <p class="price">Rp 7.000.000</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Custom Website</li>
+                            <li><i class="fas fa-check"></i> Responsive Design</li>
+                            <li><i class="fas fa-check"></i> Unlimited Revisi</li>
+                            <li><i class="fas fa-check"></i> 6 Bulan Support</li>
+                            <li><i class="fas fa-check"></i> SEO & Analytics</li>
+                            <li><i class="fas fa-check"></i> CMS Integration</li>
+                        </ul>
+                        <button class="btn btn-outline">Pilih Paket</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistik -->
+            <div class="subsection">
+                <h3>Statistik</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <h4 class="stat-number" data-target="50">0</h4>
+                        <p>Proyek Selesai</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <h4 class="stat-number" data-target="35">0</h4>
+                        <p>Klien Puas</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-calendar"></i>
+                        <h4 class="stat-number" data-target="3">0</h4>
+                        <p>Tahun Pengalaman</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-smile"></i>
+                        <h4 class="stat-number" data-target="98">0</h4>
+                        <p>Tingkat Kepuasan (%)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="subsection">
+                <h3>Timeline Perkembangan</h3>
+                <div class="development-timeline">
+                    <div class="timeline-row">
+                        <div class="timeline-date">2021</div>
+                        <div class="timeline-content">
+                            <h4>Memulai Belajar Web Development</h4>
+                            <p>Mulai belajar HTML, CSS, dan JavaScript secara otodidak.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-row">
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <h4>Proyek Pertama</h4>
+                            <p>Menyelesaikan proyek website pertama untuk klien lokal.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-row">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content">
+                            <h4>Kuliah di Universitas Pamulang</h4>
+                            <p>Memulai pendidikan S1 Sistem Informasi.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-row">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h4>Ekspansi Skill</h4>
+                            <p>Mempelajari framework modern seperti React dan Vue.js.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="subsection">
+                <h3>Pertanyaan Umum</h3>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Berapa lama waktu pengerjaan website?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Waktu pengerjaan bervariasi tergantung kompleksitas proyek. Website sederhana biasanya memakan waktu 1-2 minggu, sedangkan proyek yang lebih kompleks bisa memakan waktu 1-2 bulan.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Apakah website yang dibuat responsive?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ya, semua website yang saya buat sudah responsive dan dapat diakses dengan baik di berbagai perangkat seperti desktop, tablet, dan smartphone.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Apakah ada garansi atau support setelah website selesai?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ya, saya menyediakan support dan maintenance sesuai dengan paket yang dipilih, mulai dari 1 bulan hingga 6 bulan.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Teknologi apa saja yang Anda gunakan?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Saya menggunakan berbagai teknologi modern seperti HTML5, CSS3, JavaScript, React, Vue.js, Node.js, dan berbagai framework serta library lainnya sesuai kebutuhan proyek.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            
+            <div class="contact-wrapper">
+                <!-- Informasi Kontak -->
+                <div class="contact-info-section">
+                    <h3>Informasi Kontak</h3>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>email@example.com</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>No. Telepon</h4>
+                                <p>+62 812-3456-7890</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Alamat</h4>
+                                <p>Tangerang Selatan, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Jam Kerja</h4>
+                                <p>Senin - Jumat: 09.00 - 17.00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Media Sosial -->
+                    <div class="social-media">
+                        <h4>Media Sosial</h4>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Kontak -->
+                <div class="contact-form-section">
+                    <h3>Kirim Pesan</h3>
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" placeholder="Masukkan nama lengkap Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Masukkan email Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" placeholder="Masukkan subjek pesan">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" rows="5" placeholder="Tulis pesan Anda di sini"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="handleSubmit()">Kirim Pesan</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maps -->
+            <div class="subsection">
+                <h3>Lokasi</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2738788642845!2d106.67156931476899!3d-6.354516995414614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sUniversitas%20Pamulang!5e0!3m2!1sid!2sid!4v1234567890123!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- FAQ Kontak -->
+            <div class="subsection">
+                <h3>Pertanyaan Umum</h3>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Bagaimana cara menghubungi Anda?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Anda dapat menghubungi saya melalui form kontak di atas, email, atau media sosial yang tersedia.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Berapa lama waktu respons?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Saya biasanya merespons pesan dalam waktu 1x24 jam pada hari kerja.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 MyPortfolio. All Rights Reserved.</p>
+            <p>Made with <i class="fas fa-heart"></i> by Nama Anda</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="uas.js"></script>
 </body>
 </html>
